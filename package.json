@@ -1,0 +1,38 @@
+{
+  "name": "com.catsplatstudios.logger",
+  "version": "1.0.0",
+  "displayName": "Enhanced Logging System",
+  "description": "A comprehensive Unity logging system with automatic symbol management, file logging, screen logging, and build-integrated configuration. Supports development and release build optimization with zero performance overhead in production.",
+  "unity": "2022.2",
+  "keywords": [
+    "logging",
+    "debug",
+    "development",
+    "tools",
+    "file-logging",
+    "screen-logging",
+    "build-integration"
+  ],
+  "author": {
+    "name": "Hisham Ata",
+    "email": "hisham@catsplatstudios.com",
+    "url": "https://catsplatstudios.com"
+  },
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Basic Usage Examples",
+      "description": "Examples showing how to use the enhanced logging system with different log types and configurations",
+      "path": "Samples~/BasicUsage"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisham-css/unity-enhancedlogging.git"
+  },
+  "license": "MIT",
+  "changelogUrl": "https://github.com/hisham-css/unity-enhancedlogging/blob/master/CHANGELOG.md",
+  "documentationUrl": "https://github.com/hisham-css/unity-enhancedlogging/blob/master/README.md",
+  "licensesUrl": "https://github.com/hisham-css/unity-enhancedlogging/blob/master/LICENSE.md"
+}
+
