@@ -463,6 +463,22 @@ public static class Logger
                 logElement.AddToClassList("log-entry");
                 logElement.AddToClassList($"log-{entry.logType.ToString().ToLower()}");
 
+                // Enable text wrapping
+                logElement.style.whiteSpace = WhiteSpace.Normal;
+                logElement.style.overflow = Overflow.Visible;
+                logElement.style.textOverflow = TextOverflow.Clip;
+
+                // Set width to fill available space (accounting for scrollbar)
+                logElement.style.width = Length.Percent(100);
+                logElement.style.flexShrink = 1;
+
+                // Additional styling for better readability
+                logElement.style.marginBottom = 2;
+                logElement.style.paddingLeft = 4;
+                logElement.style.paddingRight = 4;
+                logElement.style.paddingTop = 1;
+                logElement.style.paddingBottom = 1;
+
                 string timestamp = entry.timestamp.ToString("HH:mm:ss");
                 string coloredMessage = GetColoredLogMessage(entry.message, entry.logType);
                 logElement.text = $"<color=#888888>[{timestamp}]</color> {coloredMessage}";
